@@ -1,0 +1,30 @@
+spring:
+
+#  mysql
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    url: jdbc:mysql://localhost:3306/KFTC?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&serverTimezone=Asia/Seoul
+#    password: cheldwlgus
+
+#  postgresql
+  datasource:
+    hikari:
+      maximum-pool-size: '4'
+    username: admin_test
+    url: jdbc:postgresql://localhost:5432/kftc
+    platform: postgres
+    password: a42206!!
+
+  kafka:
+    consumer:
+      group-id: test
+    bootstrap-servers: localhost:9092
+  jpa:
+    properties:
+      hibernate:
+        format_sql: 'true'
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: create
+

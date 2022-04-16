@@ -5,7 +5,7 @@ spring:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 #    username: root
 #    url: jdbc:mysql://localhost:3306/KFTC?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&serverTimezone=Asia/Seoul
-#    password: cheldwlgus
+#    password: password
 
 #  postgresql
   datasource:
@@ -14,7 +14,7 @@ spring:
     username: admin_test
     url: jdbc:postgresql://localhost:5432/kftc
     platform: postgres
-    password: a42206!!
+    password: password
 
   kafka:
     consumer:
